@@ -1,7 +1,6 @@
 ---
 title: Privacy Policy
 description: "The privacy policys"
-#layout: article
 companyname: "Company A"
 companyemail: "info@company.com"
 
