@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind forms;
+@tailwind typography;
+
+/*---Useful shortcuts---*/
+.btn_primary {
+  @apply transition duration-500 py-3 px-8 md:py-4 md:text-lg md:px-10 text-xl rounded-sm shadow-2xl hover:shadow-sm text-center hover:shadow-sm font-bold bg-primary text-white border-2 border-primary hover:border-primary hover:bg-primary hover:text-white;
+}
+.btn_secondary {
+  @apply transition duration-500 py-3 px-8 md:py-4 md:text-lg md:px-10 text-xl rounded-sm shadow-2xl hover:shadow-sm text-center hover:shadow-sm font-bold bg-white text-primary border-2 border-white hover:border-gray-100 hover:bg-transparent hover:text-primary;
+}
+.stars {
+  fill: #fdcc0d;
+  width: 20px;
+  height: 20px;
+}
+

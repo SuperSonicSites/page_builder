@@ -1,0 +1,23 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="{{ .Language }}">
+  <head>
+
+    {{- partial "head" .}}
+    
+    {{/* styles */}}
+    {{ $options := dict "inlineImports" true }}
+    {{ $styles := resources.Get "css/main.css"  }}
+    {{ $styles = $styles | resources.PostCSS }}
+    {{ if  hugo.IsProduction  }}
+      {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+    
+  </head>
+  <body class="">
+      {{- partialCached "nav" . }}
+      {{ block "main" . }}{{ end }}
+
+  {{- partial "script" . }}
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+ "comments": {
+  "devDependencies": {
+   "@tailwindcss/typography": "project",
+   "autoprefixer": "project",
+   "postcss": "project",
+   "postcss-cli": "project",
+   "postcss-purgecss": "project",
+   "tailwindcss": "project"
+  }
+ },
+ "dependencies": {
+  "@tailwindcss/forms": "^0.2.1"
+ },
+ "devDependencies": {
+  "@tailwindcss/typography": "^0.3.1",
+  "autoprefixer": "^10.0.4",
+  "postcss": "^8.1.10",
+  "postcss-cli": "^8.0.0",
+  "postcss-purgecss": "^2.0.3",
+  "tailwindcss": "^2.0.1"
+ },
+ "license": "MIT",
+ "name": "supersonic-tailwind",
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/supersonicsites"
+ },
+ "version": "0.1.0"
+}

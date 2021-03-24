@@ -1,0 +1,93 @@
+baseURL: "/"
+title: "Pagebuilder Hugo"
+
+languageCode: en-ca
+DefaultContentLanguage: en
+
+title: PageBuilder
+description: Experimental
+
+
+menu:
+  main:
+    - name: Home
+      url: '/'
+      weight: 1
+    - name: About
+      url: '#/'
+      weight: 2
+    - name: Blog
+      url: '#/'
+      weight: 3
+    - name: Services
+      url: '#/'
+      weight: 4
+    - name: Contact
+      url: '#'
+      weight: 5
+
+
+params:
+    sitename: 'Hugo PageBuilder'
+    servicename: Experiment 
+    description: Experiment
+    showLanguageSelector: false #true if bilingual site - false if unilingua
+    usebasin: '' #endpoint for forms
+    googlemap: '' # Map code of Google
+    gtm: ''
+    kit: "https://ik.imagekit.io/supersonicsites/"
+    imagekit_base_url: ""
+    hours:
+        - hour: 'Mon to Fri - 9:00-17:00' #Footer Hours Line #1
+        - hour: 'Sat - Closed' #Footer Hours Line #2
+        - hour: 'Sun - Closed' #Footer Hours Line #3
+    social:
+        facebook: 'https://www.facebook.com'
+        twitter: '#'
+        pinterest: '#'
+        instagram: '#'
+        linkedin: '#'
+    schema:
+        type: RentAction
+        priceRange: 
+        reservation: ''
+        openinghour: ''
+        logofooter: ""
+        logo: ""
+        ogimage: ""
+        address: 
+        address2: ''
+        city: 
+        region: 
+        country: 
+        postalcode: 
+        phone: +
+        email: 
+
+enableRobotsTXT: true
+disableAliases: true
+disableKinds:
+  - taxonomy
+  - taxonomyTerm
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+
+imaging:
+  resampleFilter: box
+  quality: 85
+  anchor: smart
+
+module:
+  hugoVersion:
+    extended: false
+    min: 0.75.0
+    
+build:
+  writeStats: true
+
+
+
+
+  
