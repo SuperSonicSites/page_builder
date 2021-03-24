@@ -1,9 +1,9 @@
 ---
 title: Privacy Policy
 description: "The privacy policys"
-# layout: article <- If called via _default layout it works
-companyname: "Company A" #Company Name Here
-companyemail: "info@company.com" #Company Name Here
+#layout: article
+companyname: "Company A"
+companyemail: "info@company.com"
 
 components:
     - article:
