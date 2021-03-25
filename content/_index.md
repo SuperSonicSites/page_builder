@@ -5,7 +5,7 @@ companyname: "Company A"
 companyemail: "info@company.com"
 
 components:
-    - article:
+    - article: "hello"
 
 ---
 
