@@ -1,11 +1,14 @@
 {{ define "main" }}
 
+{{ $page := . }}
 
 {{ range .Params.Components }}
 
   {{ range $component, $value := . }}
 
-    {{ partial ( printf "components/%s.html" $component ) (dict $component $value ) . }}
+    {{ $partialname := "components/%s.html" }}
+
+    {{ partial $partialname (dict "pagecontext" $page "$value")
 
   {{ end }}
   
