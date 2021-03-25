@@ -5,8 +5,8 @@ layout: single
 companyname: "Company A"
 companyemail: "info@company.com"
 
-Components:
-    - article: hello
+components:
+    - article:
 
 ---
 
