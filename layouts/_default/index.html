@@ -1,5 +1,13 @@
 {{ define "main" }}
 
-{{ partial "components/article.html" . }}
+{{ range .Params.Components }}
+
+  {{ range $component, $value := . }}
+
+  {{ partial ( printf "components/%s.html" $component ) $.Content }}
+
+  {{ end }}
+  
+{{ end }}
 
 {{ end }}
