@@ -1,18 +1,13 @@
 {{ define "main" }}
 
-{{ $page := . }}
-
 {{ range .Params.Components }}
 
   {{ range $component, $value := . }}
 
-    {{ $partialname := ".article" }}
-
-    {{ partial $partialname (dict "pagecontext" $page "foo" "bar")}}
+  {{ partial ( printf "components/%s.html" $component ) $.Content }}
 
   {{ end }}
   
 {{ end }}
-
 
 {{ end }}
